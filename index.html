@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBot</title>
+    <link rel="icon" href="images/logo.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="images/logo.png" class="logo" />
+        <nav>
+          <ul id="menulist">
+            <li><a href="#about">About</a></li>
+            <li><a href="#commands">Commands List</a></li>
+          </ul>
+        </nav>
+        <img
+          src="images/menu-logo1.png"
+          class="menu-icon"
+          onclick="togglemenu()"
+        />
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <h2>DevBot</h2>
+          <h3>A bot for Developers!</h3>
+          <button
+            style="font-weight: bold; color: white"
+            type="button"
+            onclick="window.location.href=`https://discord.com/oauth2/authorize?client_id=782930283556765696&scope=bot&permissions=261224`"
+          >
+            Add to Discord
+          </button>
+        </div>
+        <div class="col-2">
+          <img
+            data-aos="zoom-in"
+            src="images/main-logo.png"
+            class="main-logo"
+          />
+          <div class="color-box"></div>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://www.instagram.com/i.am.devansh/">
+          <img src="images/ig.png" alt=""
+        /></a>
+        <a href="https://github.com/Devansh252"
+          ><img src="images/g.png" alt=""
+        /></a>
+        <a href="https://www.linkedin.com/in/devansh-shukla-433956169/"
+          ><img src="images/l.png" alt=""
+        /></a>
+      </div>
+      <div class="row">
+        <div class="col-3" data-aos="fade-up">
+          <img class="ss" src="images/ss.png" alt="" />
+        </div>
+        <div class="col-4" id="about" data-aos="zoom-in-up">
+          <h2 style="font-size: 35px">About !</h2>
+          <br /><br />
+          <p>
+            DevBot is a Discord bot which can fetch information and links
+            related to <br />
+            Upcoming Hackathons , Jobs-openings , Internships, propular courses
+            , Documentations on frameworks, blogs etc. <br /><br />
+            For this you just need to add this bot to your Discord server and
+            write commands like -help jobs , -help internships, -hackathons,
+            -courses name-of-course <br /><br />
+            If you are a developer or want to become one, then DevBot got your
+            back !
+          </p>
+        </div>
+      </div>
+      <div id="commands" style="text-align: center" data-aos="zoom-in-up">
+        <h2 style="font-size: 35px">Commands !</h2>
+        <br />
+        <img class="com" src="images/cc.png" alt="" />
+      </div>
+      <br />
+      <footer>
+        <a>Made by devansh</a>
+      </footer>
+    </div>
+
+    <script>
+      var menuList = document.getElementById("menulist");
+
+      function togglemenu() {
+        if (menuList.style.display == "block") {
+          menuList.style.display = "none";
+        } else {
+          menuList.style.display = "block";
+        }
+      }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
