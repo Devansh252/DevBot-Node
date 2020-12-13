@@ -1,5 +1,8 @@
-# DevBot   
+# DevBot  
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Devansh252/DevBot-Node/main/images/main-logo.png" width="100" alt="accessibility text">
+</p>
 
 ### DevBot is a Discord bot which can fetch information and links related to
 
